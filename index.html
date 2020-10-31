@@ -16,7 +16,7 @@
         <!-- OVERLAY -->
         <div class="overlay display-none">
             <div class="rules">
-                <div class="container">
+                <div>
                     <div class="rules-header">
                         <h1 class="rules-head">Rules</h1>
                         <button type="button" class="btn close-rules">
@@ -29,39 +29,60 @@
             </div>
         </div>
         <!-- HEADER -->
-        <header>
-            <div class="logo">
-                <img src="./assets/logo.svg" alt="logo" />
-            </div>
-            <div class="score">
-                <p class="score-text">score</p>
-                <p class="score-number">12</p>
-            </div>
-        </header>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="./assets/logo.svg" alt="logo" />
+                </div>
+                <div class="score">
+                    <p class="score-text">score</p>
+                    <p class="score-number">12</p>
+                </div>
+            </header>
 
-        <!-- MAIN GAME -->
-        <main>
-            <div class="select display-none">
-                <div class="connector">
-                    <div class="rock select-btn">
-                        <div class="select-btn-icon">
-                            <img src="./assets/icon-rock.svg" alt="rock" />
+            <!-- MAIN GAME -->
+            <main>
+                <div class="select display-none">
+                    <div class="connector">
+                        <div class="rock select-btn">
+                            <div class="select-btn-icon">
+                                <img src="./assets/icon-rock.svg" alt="rock" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="paper select-btn">
-                        <div class="select-btn-icon">
-                            <img src="./assets/icon-paper.svg" alt="paper" />
+                        <div class="paper select-btn">
+                            <div class="select-btn-icon">
+                                <img src="./assets/icon-paper.svg" alt="paper" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="scissors select-btn">
-                        <div class="select-btn-icon">
-                            <img src="./assets/icon-scissors.svg" alt="scissors" />
+                        <div class="scissors select-btn">
+                            <div class="select-btn-icon">
+                                <img src="./assets/icon-scissors.svg" alt="scissors" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="result"></div>
-        </main>
+                <div class="result">
+                    <div class="player">
+                        <p class="result-text">you picked</p>
+                        <div class="rock select-btn">
+                            <div class="select-btn-icon">
+                                <img src="./assets/icon-rock.svg" alt="rock" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="computer">
+                        <p class="result-text">the house picked</p>
+                        <div class="paper select-btn display-none">
+                            <div class="select-btn-icon">
+                                <img src="./assets/icon-paper.svg" alt="paper" />
+                            </div>
+                        </div>
+
+                        <div class="pre-select"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
         <button class="btn rules-btn">rules</button>
     </body>

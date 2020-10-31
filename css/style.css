@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6rem;
@@ -45,9 +45,21 @@ img {
     width: 100%;
 }
 
+p {
+    text-transform: uppercase;
+    /* font-size: 12px; */
+    letter-spacing: 3px;
+}
+
 .btn {
     border: none;
     background: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 768px;
 }
 
 .rules-btn {
@@ -89,7 +101,6 @@ body .display-none {
 
 .rules-head {
     text-transform: uppercase;
-
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
@@ -183,6 +194,38 @@ body .display-none {
     top: 0;
     /* transform: translate(-50%, 50%); */
 }
+.pre-select {
+    width: 8rem;
+    height: 8rem;
+    background-color: hsl(238, 42%, 15%);
+    opacity: 0.4;
+    border-radius: 100vw;
+}
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result > * {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result .select-btn {
+    position: initial;
+    transform: none;
+    width: 8rem;
+    height: 8rem;
+}
+.result-text {
+    font-size: clamp(14px, 4vw, 1.5rem);
+    font-weight: 700;
+    text-align: center;
+    order: 2;
+    margin-top: 2rem;
+}
 
 @media (min-width: 768px) {
     .overlay {
@@ -228,5 +271,20 @@ body .display-none {
         left: initial;
         right: 2rem;
         bottom: 2rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .result-text {
+        order: initial;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .select-btn,
+    .result .select-btn,
+    .pre-select {
+        width: 15rem;
+        height: 15rem;
     }
 }
