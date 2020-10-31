@@ -279,7 +279,7 @@ body .display-none {
     );
     z-index: -2;
 
-    animation: pulse 1000ms linear infinite;
+    animation: pulse 1300ms linear infinite;
 }
 
 @media (min-width: 768px) {
@@ -328,7 +328,6 @@ body .display-none {
         bottom: 2rem;
     }
 
-    .select-btn,
     .result .select-btn,
     .pre-select {
         width: 12rem;
@@ -343,7 +342,6 @@ body .display-none {
         margin-bottom: 3rem;
     }
 
-    .select-btn,
     .result .select-btn,
     .pre-select {
         width: 15rem;
