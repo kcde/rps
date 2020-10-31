@@ -24,7 +24,7 @@ body {
     color: white;
     position: relative;
     z-index: -1;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     border-radius: 10px;
     max-width: 768px;
 }
@@ -57,9 +57,9 @@ p {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 1024px;
 }
 
 .rules-btn {
@@ -195,8 +195,8 @@ body .display-none {
     /* transform: translate(-50%, 50%); */
 }
 .pre-select {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     background-color: hsl(238, 42%, 15%);
     opacity: 0.4;
     border-radius: 100vw;
@@ -205,6 +205,7 @@ body .display-none {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .result > * {
     position: relative;
@@ -216,8 +217,8 @@ body .display-none {
 .result .select-btn {
     position: initial;
     transform: none;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
 }
 .result-text {
     font-size: clamp(14px, 4vw, 1.5rem);
@@ -225,6 +226,28 @@ body .display-none {
     text-align: center;
     order: 2;
     margin-top: 2rem;
+}
+
+.outcome {
+    position: absolute;
+    bottom: -75%;
+    left: 50%;
+    transform: translate(-50%, 75%);
+}
+
+.outcome-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.play-again {
+    background-color: hsl(240, 9%, 96%);
+    color: var(--dark-text);
+    height: 3rem;
+    width: 13rem;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -272,6 +295,13 @@ body .display-none {
         right: 2rem;
         bottom: 2rem;
     }
+
+    .select-btn,
+    .result .select-btn,
+    .pre-select {
+        width: 12rem;
+        height: 12rem;
+    }
 }
 
 @media (min-width: 960px) {
@@ -286,5 +316,12 @@ body .display-none {
     .pre-select {
         width: 15rem;
         height: 15rem;
+    }
+
+    .outcome {
+        bottom: initial;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
     }
 }
