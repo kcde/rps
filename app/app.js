@@ -72,7 +72,7 @@ const score = (p1, p2) => {
         } else {
             if (p2 === 'rock') {
                 //loose
-                return ' loose';
+                return 'loose';
             } else {
                 //win
                 return 'win';
